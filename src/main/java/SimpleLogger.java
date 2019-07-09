@@ -4,19 +4,19 @@ import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Logger {
-    private static Logger instance;
+public class SimpleLogger {
+    private static SimpleLogger instance;
     private String lastDate = "";
     private String path = "log";
 
-    public static Logger getInstance() {
+    public static SimpleLogger getInstance() {
         if (instance == null) {
-            instance = new Logger();
+            instance = new SimpleLogger();
         }
         return instance;
     }
 
-    private Logger() {
+    private SimpleLogger() {
 
     }
 
